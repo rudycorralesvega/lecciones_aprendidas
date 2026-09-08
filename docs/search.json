@@ -2,11 +2,11 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "lecciones_aprendidas",
+    "title": "Lecciones Aprendidas",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2\n\n\nl",
+    "text": "Presentación\nLecciones aprendidas es un compendio de historias en las cuales se ha generado una enseñanza. Como todo en la vida hay situaciones que ocurren que te dejan tan marcado, que conviene hacer un alto en el camino para reflexionarlas y poder sacarles el mejor provecho.\nEsto no busca se un diario, sino una memoría publica que el autor desea ofrecer con la intensiòn de compartir lo vivido y lo que esto generó. Quizás no todas las historias sean de interés del lector, sin embargo espero que al menos una lo sea.\nGracias por tomar tiempo de leerme.",
     "crumbs": [
-      "Preface"
+      "Presentación"
     ]
   },
   {
@@ -37,6 +37,16 @@
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "leccion2.html",
+    "href": "leccion2.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
     ]
   }
 ]

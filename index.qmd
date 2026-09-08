@@ -1,11 +1,7 @@
-# Preface {.unnumbered}
+# Presentación {.unnumbered}
 
-This is a Quarto book.
+Lecciones aprendidas es un compendio de historias en las cuales se ha generado una enseñanza. Como todo en la vida hay situaciones que ocurren que te dejan tan marcado, que conviene hacer un alto en el camino para reflexionarlas y poder sacarles el mejor provecho.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Esto no busca se un diario, sino una memoría publica que el autor desea ofrecer con la intensiòn de compartir lo vivido y lo que esto generó. Quizás no todas las historias sean de interés del lector, sin embargo espero que al menos una lo sea.
 
-```{r}
-1 + 1
-```
-
-l
+Gracias por tomar tiempo de leerme.
