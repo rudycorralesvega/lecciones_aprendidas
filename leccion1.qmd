@@ -1,2 +1,25 @@
-# Lección 1
+# ¿Cómo se hace este documento?
 
+La publicación de este sitio es el resultado de la combinación de algunas tecnologias y un par de conocimientos de como ejecutarlas. Quizás alguno de los lectores tenga interés en hacer algo como esto y por lo tanto le comparto el detalle de como lograrlo
+
+## Herramientas
+
+Para poder crear un sitio como este se requiere tener algunas herramientas instaldas:
+
+1.  Debes tener [RStudio](https://posit.co/downloads)
+2.  Por supuesto que debes tener [R](https://cran.r-project.org)
+3.  Debes tener [Quarto](https://quarto.org)
+4.  Debes tener una cuenta abierta de [GitHub](https://github.com)
+5.  No es indispensable, pero si te gustan los textos científicos, debes tener [TeX](https://miktex.org)
+
+## Paso 1
+
+El primer paso para iniciar esta aventura es abrir RStudio y crear un Nuevo Proyecto\>Quarto, según se ilustra en la imagen adjunta
+
+![Crear Proyecto](images/L1_F1.png)
+
+## Paso 2
+
+El Paso 2 es ajustar uno de los archivos que genera el Quarto, para que el codigo de la página se ubique en una nueva carpeta que llamaremos "docs". El archivo que administra estos detalles se llama \_quarto.yml, allí debemos agregar una linea hija de project que indique que el output dir se almacenarán en docs, tal y como se muestra en la siguiente imagen:
+
+![crear output dir](images/L1_F2.png)
