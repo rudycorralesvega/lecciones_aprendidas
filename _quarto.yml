@@ -10,7 +10,6 @@ book:
     - index.qmd
     - leccion1.qmd
     - leccion2.qmd
-    - referencias.qmd
 
 bibliography: references.bib
 

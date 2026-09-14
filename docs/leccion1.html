@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; ¿Cómo se hace este documento? – Lecciones Aprendidas</title>
+<title>1&nbsp; ¿Cómo se hace este sitio? – Lecciones Aprendidas</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./leccion1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">¿Cómo se hace este documento?</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./leccion1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">¿Cómo se hace este sitio?</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -122,19 +122,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./leccion1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">¿Cómo se hace este documento?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">¿Cómo se hace este sitio?</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./leccion2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Lección 2</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Referencias</span></a>
   </div>
 </li>
     </ul>
@@ -159,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">¿Cómo se hace este documento?</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">¿Cómo se hace este sitio?</span></h1>
 </div>
 
 
@@ -212,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 <li>clear</li>
 <li>git init</li>
 <li>git add .</li>
-<li>git commit -m “Primer commit: subiendo proyecto base”</li>
+<li>git commit -m “mesnaje”</li>
 <li>git remote add origin https://github.com/rudycorralesvega/lecciones_aprendidas.git</li>
 <li>git push -u origin main</li>
 </ol>
@@ -226,7 +220,32 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><strong>Primero:</strong> vamos a limpiar la terminal. Esto se hace digitando “clear”</p>
 <p><strong>Segundo</strong>: vamos a iniciar git. Esto se hace digitando “git init”</p>
-<p><strong>Tercero</strong>: vamos a decirle a git que seleccione todos los archivos del proyecto para subirlos al repositorio. Esto se hace digitando “git add .” Nótese que hemos puesto un punto, señal en git para indicar todo.</p>
+<p><strong>Tercero</strong>: vamos a decirle a git que seleccione todos los archivos del proyecto para subirlos al repositorio. Esto se hace digitando “git add .” Nótese que hemos puesto un punto (“.”), señal en git para indicar que todo debe registrarse.</p>
+<p><strong>Cuarto</strong>: el siguiente comando es agregar un comentario a la publicacion en el repositorio. Esto es muy útil, para identificar momentos en el tiempo del control de cambios de los archivos. Lo idea es publicar en momentos en que la publicaciòn llega a un estado, por ejemplo: agrega capitulo 1, corrije error en la sección tres, etc. La publicación del comentario se hace “git commit -m”mensaje”.</p>
+<p><strong>Quinto</strong>: La quinta etapa sólo se hace una vez. Consiste en cumplir con la seguridad de git para publicar en nuestro repo. Lo primero que debe hacerse es decirle al proyecto en RStudio la ruta de publicación. Esto se toma de la página de creación del repo en GitHub.</p>
+<p><img src="images/L1_F5.png" class="img-fluid" alt="Ruta en GitHub"> El cógigo de la ruta esta en las lineas que se sugieren al crear el repo. Debe digitarse tal cual en la terminal: git remote add origin “ruta”. Lo que este código hace es indicarle a RStudio el lugar remoto donde se ubicará el código. Se indica el concepto “origen” como estandar de git para indicar que ese será el lugar se se considerá el almacen de todo el proyecto.</p>
+<p>Como parte de este enlace entre GiHub y RStudio lo que sigue es por medio de usuario y password(token). Git te pedirá primero identificar tu usuario. Lo segundo es poner el password. Este es un token que se genera en la misma herramienta Github.</p>
+<p>La Ruta para obtener el token es irse a la foto de perfil. En el menu que se despliega seleccionar “settings” y allì en la parte más baja a la izquierda de la página seleccionar “Developer Settings”, donde se tendrá la opciòn de generar los tokens, especificamente la copción (classic)</p>
+<p><img src="images/L1_F6.png" class="img-fluid" alt="Tokens en GitHub"> Una vez quenerado el Token, desde RSudio completar en Terminal la epara de suministro de credenciales.</p>
+<p><strong>Seis</strong> La etapa seis consiste en el envío al repositorio de git de todo lo hecho en RStudio. Incluidos los render que se han almacenado en la carpeta “docs”. Ese envio se hace con la instruccion “git push -u origin main”, es decir, envie al origen lo que se haya agregado a una rama que en git se llama “main”.</p>
+<p>Una vez que esta instruccion se ejecuta, hay que verificar que los archivos que estaban en RStudio esten ahora en GitHub.</p>
+<p>Conviene hacer cambios en RStudio, sepetir los pasos descritos, excepto el de credenciales, que sólo es necesario una vez.</p>
+<p><strong>Publicacion</strong> El siguiente y último paso, sólo se hace una vez. Vamos configurar la publicaciñon.</p>
+<p>Debemos entrar al proyecto. Allí debe verificarse que los archivos sean los últimos que se desee publicar.</p>
+<p>En la parte del menu del repo debe seleccionarse “settings” y allí la sección “pages”. A este punto solo queda decirle a la herramienta que nuestra nueva pagina web está en la rama “main” y que los render estàn en “docs”, de la siguiente manera:.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/L1_F7.png" class="img-fluid figure-img"></p>
+<figcaption>Publicacion</figcaption>
+</figure>
+</div>
+<p>Con esto la aplicaciòn de GitHub iniciará el proceso de preparación de la página y unos minutos despues, generalmente son entre 5 y 10 minutos, se desplegará el enlace a la página:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/L1_F8.png" class="img-fluid figure-img"></p>
+<figcaption>Enlace a la página</figcaption>
+</figure>
+</div>
 
 
 </section>
