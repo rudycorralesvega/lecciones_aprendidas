@@ -150,6 +150,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#herramientas" id="toc-herramientas" class="nav-link active" data-scroll-target="#herramientas"><span class="header-section-number">1.1</span> Herramientas</a></li>
   <li><a href="#paso-1" id="toc-paso-1" class="nav-link" data-scroll-target="#paso-1"><span class="header-section-number">1.2</span> Paso 1</a></li>
   <li><a href="#paso-2" id="toc-paso-2" class="nav-link" data-scroll-target="#paso-2"><span class="header-section-number">1.3</span> Paso 2</a></li>
+  <li><a href="#paso-4" id="toc-paso-4" class="nav-link" data-scroll-target="#paso-4"><span class="header-section-number">1.4</span> Paso 4</a></li>
   </ul>
 </nav>
     </div>
@@ -175,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>La publicación de este sitio es el resultado de la combinación de algunas tecnologias y un par de conocimientos de como ejecutarlas. Quizás alguno de los lectores tenga interés en hacer algo como esto y por lo tanto le comparto el detalle de como lograrlo</p>
+<p>La publicación de este sitio es el resultado de la combinación de algunas tecnologías y un par de conocimientos de cómo ejecutarlas. Quizás alguno de los lectores tenga interés en hacer algo como esto y por lo tanto le comparto el detalle de como lograrlo</p>
 <section id="herramientas" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="herramientas"><span class="header-section-number">1.1</span> Herramientas</h2>
 <p>Para poder crear un sitio como este se requiere tener algunas herramientas instaldas:</p>
@@ -199,13 +200,33 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="paso-2" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="paso-2"><span class="header-section-number">1.3</span> Paso 2</h2>
-<p>El Paso 2 es ajustar uno de los archivos que genera el Quarto, para que el codigo de la página se ubique en una nueva carpeta que llamaremos “docs”. El archivo que administra estos detalles se llama _quarto.yml, allí debemos agregar una linea hija de project que indique que el output dir se almacenarán en docs, tal y como se muestra en la siguiente imagen:</p>
+<p>El Paso 2 es ajustar uno de los archivos que genera el Quarto, para que el codigo de la página se ubique en una nueva carpeta que llamaremos “docs”. El archivo que administra estos detalles se llama _quarto.yml, allí debemos agregar una linea hija de project que indique que el directorio de salida “output dir” para los archivos renderizados se almacenarán en “docs”, tal y como se muestra en la siguiente imagen:</p>
+<p><img src="images/L1_F2.png" class="img-fluid" alt="crear output dir"> ## Paso 3 Este es un buen momento para hacer un render y verificar que la nueva página se ha creado bien. Revise que en el directorio “doc” estan los archivos. RStudio abrirá una pagina web, así se ira mostrando los cambios que se vayan ejecutando. Conviene invertir tiempo en cambiar frases, agregar secciones, etc. para dominar la sintaxis.</p>
+</section>
+<section id="paso-4" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="paso-4"><span class="header-section-number">1.4</span> Paso 4</h2>
+<p>El paso 4 se lleva a cabo en GitHub. Allí se debe crear un nuevo proyecto, preferiblemente con el nombre del que hemos creado en RSudio.</p>
+<p><img src="images/L1_F3.png" class="img-fluid" alt="crear repo en GitHub"> Al crear el repor en blanco se tendrá acceso a una lista de comandos que debemos guardar. Estos Comando nos servirán para asegurarnos de que RSudio ubicará nuestros archivos en este lugar.</p>
+<p>Los códigos de interés son (ya casi los explicamos):</p>
+<ol type="1">
+<li>clear</li>
+<li>git init</li>
+<li>git add .</li>
+<li>git commit -m “Primer commit: subiendo proyecto base”</li>
+<li>git remote add origin https://github.com/rudycorralesvega/lecciones_aprendidas.git</li>
+<li>git push -u origin main</li>
+</ol>
+<p>Para los que no están familiarizados con este tipo de instrucciones, “git” es un lenguaje para colaborar varias personas en archivos compartidos. Son un protocolo que ordena como se llevan archivos, en este caso a “GitHub”. La lista de códigos que he puesto, parten del hecho de que sólo el author subirá contenido al repositorio.</p>
+<p>Favor notar que en RStudio es diferente trabajar en “consola” a trabajar en “terminal”. En Consola se manejan las instrucciones de “R”, en Terminal pondremos las instrucciones de “Git”</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/L1_F2.png" class="img-fluid figure-img"></p>
-<figcaption>crear output dir</figcaption>
+<p><img src="images/L1_F4.png" class="img-fluid figure-img"></p>
+<figcaption>Consola vs.&nbsp;Terminal</figcaption>
 </figure>
 </div>
+<p><strong>Primero:</strong> vamos a limpiar la terminal. Esto se hace digitando “clear”</p>
+<p><strong>Segundo</strong>: vamos a iniciar git. Esto se hace digitando “git init”</p>
+<p><strong>Tercero</strong>: vamos a decirle a git que seleccione todos los archivos del proyecto para subirlos al repositorio. Esto se hace digitando “git add .” Nótese que hemos puesto un punto, señal en git para indicar todo.</p>
 
 
 </section>
